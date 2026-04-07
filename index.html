@@ -1,50 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nafiu Ebrahim | Entrepreneur</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;400;800&display=swap" rel="stylesheet">
-    <style>
-        body { background-color: #020617; color: #f8fafc; font-family: 'Plus Jakarta Sans', sans-serif; overflow-x: hidden; }
-        .hero-glow { background: radial-gradient(circle at 50% 50%, rgba(59, 130, 246, 0.1) 0%, transparent 80%); }
-        .nav-link { font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.2em; color: #94a3b8; transition: 0.3s; }
-        .nav-link:hover { color: #fff; }
-        .btn-cyan { background: #00BAF2; color: #000; font-weight: 900; transition: 0.4s; }
-        .btn-cyan:hover { background: #fff; transform: translateY(-3px); }
-    </style>
+  <meta charset="UTF-8">
+  <title>Nafiu Ebrahim | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+
+    header {
+      padding: 20px;
+      text-align: center;
+      background: #020617;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: #38bdf8;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: #94a3b8;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .hero {
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2em;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #38bdf8;
+      color: black;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .skills, .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #020617;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #020617;
+      color: #64748b;
+    }
+  </style>
 </head>
+
 <body>
-    <div class="hero-glow fixed inset-0 -z-10"></div>
 
-    <nav class="fixed top-0 w-full z-50 p-4 md:p-8">
-        <div class="max-w-6xl mx-auto flex justify-between items-center bg-slate-900/50 backdrop-blur-xl border border-white/5 rounded-2xl px-6 py-4">
-            <div class="text-xl font-black tracking-tighter">NAFIU<span class="text-blue-500">.</span></div>
-            <div class="hidden md:flex gap-8">
-                <a href="index.html" class="nav-link text-white">Home</a>
-                <a href="about.html" class="nav-link">About</a>
-                <a href="expertise.html" class="nav-link">Expertise</a>
-                <a href="mailto:ayonk5578@gmail.com" class="nav-link">Contact</a>
-            </div>
-            <a href="mailto:ayonk5578@gmail.com" class="md:hidden text-[10px] font-bold uppercase tracking-widest bg-blue-600 px-4 py-2 rounded-lg">Contact</a>
-        </div>
-    </nav>
+<header>
+  <h1>Nafiu Ebrahim</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-    <section class="min-h-screen flex flex-col justify-center items-center text-center px-6 pt-20">
-        <div class="mb-8 inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-[10px] font-bold uppercase tracking-widest">
-            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Available for new projects
-        </div>
-        <h1 class="text-5xl md:text-9xl font-black tracking-tighter mb-6 leading-none">
-            Hi, I’m <br> <span class="bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">Nafiu Ebrahim</span>
-        </h1>
-        <p class="text-gray-400 text-lg md:text-2xl max-w-2xl mb-12 font-light">
-            I engineer professional <span class="text-white">Web Systems</span>, AI automations, and trade global markets. Let's build something remarkable.
-        </p>
-        <div class="flex flex-col md:flex-row gap-4">
-            <a href="expertise.html" class="btn-cyan px-10 py-5 rounded-2xl text-sm uppercase tracking-widest">View My Work</a>
-            <a href="mailto:ayonk5578@gmail.com" class="bg-slate-800 text-white px-10 py-5 rounded-2xl text-sm uppercase tracking-widest border border-white/10 hover:bg-slate-700 transition">Get in Touch</a>
-        </div>
-    </section>
+<section class="hero">
+  <h2>Entrepreneur | Web Developer | AI Automation Specialist | Trader</h2>
+  <p>I build modern web solutions, automate systems with AI, and explore global markets.</p>
+  <a href="#contact" class="btn">Contact Me</a>
+</section>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    I'm Nafiu Ebrahim, a passionate entrepreneur specializing in web development,
+    AI automation, and trading. I love building digital solutions that solve real-world problems.
+    Traveling across countries inspires my creativity and business mindset.
+  </p>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div class="card">Web Development (HTML, CSS, JS, React)</div>
+    <div class="card">AI Automation & Bots</div>
+    <div class="card">Trading & Market Analysis</div>
+    <div class="card">Entrepreneurship</div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects">
+    <div class="card">
+      <h3>AI Automation Tool</h3>
+      <p>Automated workflows using AI to increase efficiency.</p>
+    </div>
+    <div class="card">
+      <h3>Trading Dashboard</h3>
+      <p>Real-time analytics for smarter trading decisions.</p>
+    </div>
+    <div class="card">
+      <h3>Business Website</h3>
+      <p>Modern responsive website for online presence.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: your@email.com</p>
+  <p>GitHub: github.com/yourusername</p>
+</section>
+
+<footer>
+  <p>© 2026 Nafiu Ebrahim. All rights reserved.</p>
+</footer>
+
+<script>
+  console.log("Portfolio Loaded Successfully 🚀");
+</script>
+
 </body>
 </html>
