@@ -3,83 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NAFIU | International Strategy & Tech</title>
+    <title>NAFIU | International Trade & Strategy</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;800&family=Space+Grotesk:wght@300;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Outfit:wght@100;400;900&display=swap" rel="stylesheet">
     <style>
-        :root { --bg: #0a0a0b; --accent: #3b82f6; --glass: rgba(255, 255, 255, 0.03); }
-        body { background-color: var(--bg); color: #e5e7eb; font-family: 'Plus Jakarta Sans', sans-serif; overflow-x: hidden; }
-        .hero-gradient { background: radial-gradient(circle at 50% 50%, rgba(59, 130, 246, 0.1) 0%, transparent 50%); }
-        .glass-card { background: var(--glass); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 24px; transition: 0.3s; }
-        .glass-card:hover { border-color: rgba(59, 130, 246, 0.4); transform: translateY(-5px); }
-        .title-font { font-family: 'Space Grotesk', sans-serif; }
+        body { background-color: #050505; color: #ffffff; font-family: 'Outfit', sans-serif; overflow-x: hidden; }
+        .heading-font { font-family: 'Space Grotesk', sans-serif; }
+        .glass { background: rgba(255, 255, 255, 0.02); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.05); }
+        .silver-glow:hover { border-color: rgba(192, 192, 192, 0.5); box-shadow: 0 0 30px rgba(255, 255, 255, 0.05); }
+        .gradient-text { background: linear-gradient(to right, #ffffff, #666666); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .status-dot { height: 8px; width: 8px; background-color: #00ff88; border-radius: 50%; display: inline-block; box-shadow: 0 0 10px #00ff88; }
     </style>
 </head>
-<body>
-    <div class="hero-gradient fixed inset-0 -z-10"></div>
+<body class="selection:bg-white selection:text-black">
 
-    <!-- Navigation -->
-    <nav class="max-w-7xl mx-auto px-6 py-8 flex justify-between items-center">
-        <div class="text-2xl font-black tracking-tighter title-font text-white">N.</div>
-        <div class="hidden md:flex gap-10 text-xs uppercase tracking-[0.2em] font-bold text-gray-500">
-            <a href="#about" class="hover:text-blue-500 transition">About</a>
-            <a href="#expertise" class="hover:text-blue-500 transition">Expertise</a>
-            <a href="#contact" class="hover:text-blue-500 transition">Connect</a>
+    <nav class="fixed top-0 w-full z-50 px-6 py-8">
+        <div class="max-w-7xl mx-auto flex justify-between items-center glass p-4 rounded-2xl">
+            <span class="heading-font font-bold text-2xl tracking-tighter">NAFIU<span class="text-gray-600">.</span></span>
+            <div class="flex gap-8 text-[10px] uppercase tracking-[0.3em] font-medium text-gray-400">
+                <a href="#about" class="hover:text-white transition">Inventory</a>
+                <a href="#strategy" class="hover:text-white transition">Strategy</a>
+                <a href="#connect" class="bg-white text-black px-4 py-2 rounded-lg font-black ml-4 hover:bg-gray-200 transition">Contact</a>
+            </div>
         </div>
-        <a href="mailto:your-email@example.com" class="bg-white text-black px-6 py-3 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-blue-500 hover:text-white transition">Hire Me</a>
     </nav>
 
-    <!-- Hero Section -->
-    <header class="max-w-7xl mx-auto px-6 pt-20 pb-32 grid lg:grid-cols-2 gap-16 items-center">
-        <div>
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-bold mb-6">
-                <span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span></span>
-                AVAILABLE FOR STRATEGIC PARTNERSHIPS
-            </div>
-            <h1 class="text-7xl md:text-8xl font-extrabold title-font text-white leading-[0.9] tracking-tighter mb-8">
-                BUILDING <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">VALUE.</span>
-            </h1>
-            <p class="text-xl text-gray-400 leading-relaxed mb-10 max-w-lg">
-                International Trade specialist focusing on high-end tech hardware, market arbitrage, and luxury brand strategy.
-            </p>
-            <div class="flex gap-4">
-                <a href="#expertise" class="bg-blue-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-blue-700 transition shadow-lg shadow-blue-500/20">View Portfolio</a>
-                <a href="#about" class="glass-card px-8 py-4 rounded-xl font-bold hover:bg-white/5 transition">Learn More</a>
-            </div>
+    <section class="min-h-screen flex flex-col justify-center items-center px-6 pt-32">
+        <div class="inline-flex items-center gap-3 px-4 py-2 glass rounded-full mb-10 silver-glow transition">
+            <span class="status-dot animate-pulse"></span>
+            <span class="text-[10px] uppercase tracking-widest font-bold">Resale Operations Active : Saudi Arabia / US</span>
         </div>
+        
+        <h1 class="heading-font text-7xl md:text-[12rem] font-black leading-none tracking-tighter text-center gradient-text">
+            GLOBAL <br> ARBITRAGE
+        </h1>
+        
+        <p class="max-w-2xl text-center text-gray-500 mt-10 text-lg md:text-xl font-light leading-relaxed">
+            High-end hardware procurement and international resale strategy. Specializing in the Apple ecosystem and professional market analytics.
+        </p>
 
-        <div class="relative">
-            <div class="glass-card aspect-[4/5] overflow-hidden rotate-2 hover:rotate-0 transition duration-500">
-                <!-- Replace 'me.jpg' with your photo filename -->
-                <img src="me.jpg" alt="NAFIU" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-700">
+        <div class="mt-16 flex gap-6">
+            <div class="glass p-8 rounded-3xl silver-glow transition text-center min-w-[160px]">
+                <div class="text-3xl font-bold heading-font">14+</div>
+                <div class="text-[9px] uppercase tracking-widest text-gray-600 mt-2">Pro Models Sold</div>
             </div>
-            <div class="absolute -bottom-8 -right-8 glass-card p-8 rotate-[-2deg]">
-                <div class="text-4xl font-bold title-font text-white">95%</div>
-                <div class="text-[10px] uppercase tracking-widest text-gray-500 font-bold">Resale Profit Margin</div>
-            </div>
-        </div>
-    </header>
-
-    <!-- Stats Section -->
-    <section id="expertise" class="max-w-7xl mx-auto px-6 pb-32">
-        <div class="grid md:grid-cols-3 gap-6">
-            <div class="glass-card p-10">
-                <div class="w-12 h-12 bg-blue-500/10 rounded-lg flex items-center justify-center mb-6 text-blue-400 font-bold italic">iP</div>
-                <h3 class="text-xl font-bold mb-4 text-white">Tech Resale</h3>
-                <p class="text-gray-400 text-sm leading-relaxed">Specializing in high-cycle Apple hardware diagnostics and international resale logistics.</p>
-            </div>
-            <div class="glass-card p-10">
-                <div class="w-12 h-12 bg-emerald-500/10 rounded-lg flex items-center justify-center mb-6 text-emerald-400 font-bold italic">$$</div>
-                <h3 class="text-xl font-bold mb-4 text-white">Market Strategy</h3>
-                <p class="text-gray-400 text-sm leading-relaxed">Statistical analysis for international football and cricket markets with focus on ROI.</p>
-            </div>
-            <div class="glass-card p-10">
-                <div class="w-12 h-12 bg-purple-500/10 rounded-lg flex items-center justify-center mb-6 text-purple-400 font-bold italic">AI</div>
-                <h3 class="text-xl font-bold mb-4 text-white">Digital Creation</h3>
-                <p class="text-gray-400 text-sm leading-relaxed">Content creation and digital storytelling focusing on finance and global history.</p>
+            <div class="glass p-8 rounded-3xl silver-glow transition text-center min-w-[160px]">
+                <div class="text-3xl font-bold heading-font">90%</div>
+                <div class="text-[9px] uppercase tracking-widest text-gray-600 mt-2">Battery Health Min.</div>
             </div>
         </div>
     </section>
+
+    <section id="strategy" class="max-w-7xl mx-auto px-6 py-32 grid md:grid-cols-2 gap-12">
+        <div class="glass p-12 rounded-[3rem] silver-glow transition group">
+            <h3 class="heading-font text-4xl font-bold mb-6">Hardware <br> Logistics</h3>
+            <p class="text-gray-500 mb-8 leading-relaxed">Sourcing pristine MacBooks and iPhones for international export. Deep expertise in battery cycle optimization and resale value preservation.</p>
+            <div class="h-64 bg-zinc-900 rounded-3xl overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover opacity-50 group-hover:opacity-100 transition duration-500 grayscale group-hover:grayscale-0">
+            </div>
+        </div>
+
+        <div class="glass p-12 rounded-[3rem] silver-glow transition group">
+            <h3 class="heading-font text-4xl font-bold mb-6">Market <br> Analytics</h3>
+            <p class="text-gray-500 mb-8 leading-relaxed">Strategic wagering on international football and cricket. Leveraging statistical models to capitalize on market inefficiencies.</p>
+            <div class="h-64 bg-zinc-900 rounded-3xl overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover opacity-50 group-hover:opacity-100 transition duration-500 grayscale group-hover:grayscale-0">
+            </div>
+        </div>
+    </section>
+
+    <footer class="max-w-7xl mx-auto px-6 py-20 border-t border-zinc-900 text-center">
+        <h2 class="heading-font text-4xl font-bold mb-4">Let's talk business.</h2>
+        <p class="text-gray-600 mb-10">Strategic partnerships and resale inquiries.</p>
+        <a href="mailto:your-email@gmail.com" class="text-2xl font-light hover:text-gray-400 transition underline underline-offset-8 decoration-zinc-800">nafiu@strategy.com</a>
+    </footer>
 
 </body>
 </html>
