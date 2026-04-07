@@ -10,183 +10,56 @@
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
-
-body{
-  background:#020617;
-  color:white;
-  overflow-x:hidden;
-}
+body{background:#020617;color:white;overflow-x:hidden;}
 
 /* BACKGROUND GLOW */
 .bg{
-  position:fixed;
-  width:700px;
-  height:700px;
+  position:fixed;width:700px;height:700px;
   background:radial-gradient(circle,#38bdf833,transparent 70%);
-  top:20%;
-  left:50%;
-  transform:translate(-50%,-50%);
-  filter:blur(100px);
-  z-index:-1;
+  top:20%;left:50%;transform:translate(-50%,-50%);
+  filter:blur(100px);z-index:-1;
 }
 
 /* NAV */
-nav{
-  position:fixed;
-  width:100%;
-  top:0;
-  padding:18px 30px;
-  display:flex;
-  justify-content:space-between;
-  background:rgba(0,0,0,0.6);
-  backdrop-filter:blur(10px);
-  z-index:1000;
-}
-
-nav a{
-  margin-left:15px;
-  text-decoration:none;
-  color:#ccc;
-  font-size:0.9em;
-}
-
+nav{position:fixed;width:100%;top:0;padding:18px 30px;display:flex;justify-content:space-between;background:rgba(0,0,0,0.6);backdrop-filter:blur(10px);z-index:1000;}
+nav a{margin-left:15px;text-decoration:none;color:#ccc;font-size:0.9em;}
 nav a:hover{color:#38bdf8;}
 
 /* HERO */
-.hero{
-  min-height:100vh;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
-  padding:140px 20px;
-}
-
-.profile{
-  width:160px;
-  height:160px;
-  border-radius:50%;
-  background:url('me.jpg') center/cover;
-  border:4px solid #38bdf8;
-  box-shadow:0 0 40px #38bdf8;
-  margin-bottom:25px;
-  animation:float 4s ease-in-out infinite;
-}
-
-@keyframes float{
-  0%,100%{transform:translateY(0);}
-  50%{transform:translateY(-10px);}
-}
-
-.hero h1{
-  font-size:3em;
-  background:linear-gradient(90deg,#38bdf8,#6366f1);
-  -webkit-background-clip:text;
-  color:transparent;
-}
-
-#typing{
-  margin-top:10px;
-  color:#94a3b8;
-  font-size:1.2em;
-}
-
-.btn{
-  margin-top:30px;
-  padding:14px 30px;
-  border-radius:30px;
-  background:linear-gradient(90deg,#38bdf8,#6366f1);
-  color:white;
-  text-decoration:none;
-  transition:0.3s;
-}
-
-.btn:hover{
-  transform:scale(1.1);
-  box-shadow:0 0 20px #38bdf8;
-}
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:140px 20px;}
+.profile{width:160px;height:160px;border-radius:50%;background:url('me.jpg') center/cover;border:4px solid #38bdf8;box-shadow:0 0 40px #38bdf8;margin-bottom:25px;animation:float 4s ease-in-out infinite;}
+@keyframes float{0%,100%{transform:translateY(0);}50%{transform:translateY(-10px);}}
+.hero h1{font-size:3em;background:linear-gradient(90deg,#38bdf8,#6366f1);-webkit-background-clip:text;color:transparent;}
+#typing{margin-top:10px;color:#94a3b8;font-size:1.2em;}
+.btn{margin-top:30px;padding:14px 30px;border-radius:30px;background:linear-gradient(90deg,#38bdf8,#6366f1);color:white;text-decoration:none;transition:0.3s;}
+.btn:hover{transform:scale(1.1);box-shadow:0 0 20px #38bdf8;}
 
 /* SECTIONS */
-section{
-  padding:120px 20px;
-  max-width:1100px;
-  margin:auto;
-  opacity:0;
-  transform:translateY(40px);
-  transition:0.7s;
-}
-
-section.show{
-  opacity:1;
-  transform:translateY(0);
-}
-
-h2{
-  font-size:2.5em;
-  margin-bottom:30px;
-}
+section{padding:120px 20px;max-width:1100px;margin:auto;opacity:0;transform:translateY(40px);transition:0.7s;}
+section.show{opacity:1;transform:translateY(0);}
+h2{font-size:2.5em;margin-bottom:30px;}
 
 /* GRID */
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:25px;
-}
-
-.card{
-  padding:25px;
-  border-radius:15px;
-  background:rgba(255,255,255,0.05);
-  transition:0.3s;
-}
-
-.card:hover{
-  transform:translateY(-10px) scale(1.03);
-  box-shadow:0 0 25px rgba(56,189,248,0.3);
-}
-
-.card i{
-  font-size:1.8em;
-  color:#38bdf8;
-  margin-bottom:10px;
-}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px;}
+.card{padding:25px;border-radius:15px;background:rgba(255,255,255,0.05);transition:0.3s;}
+.card:hover{transform:translateY(-10px) scale(1.03);box-shadow:0 0 25px rgba(56,189,248,0.3);}
+.card i{font-size:1.8em;color:#38bdf8;margin-bottom:10px;}
 
 /* ABOUT */
-.about{
-  color:#ccc;
-  line-height:1.7;
-  font-size:1.1em;
-}
+.about{color:#ccc;line-height:1.7;font-size:1.1em;}
 
 /* SOCIAL */
-.socials{
-  margin-top:20px;
-}
-
-.socials a{
-  font-size:1.8em;
-  margin-right:20px;
-  color:white;
-}
-
+.socials{margin-top:20px;}
+.socials a{font-size:1.8em;margin-right:20px;color:white;}
 .socials a:hover{color:#38bdf8;}
 
 /* FOOTER */
-footer{
-  text-align:center;
-  padding:40px;
-  color:#666;
-}
+footer{text-align:center;padding:40px;color:#666;}
 
 /* MOBILE */
-@media(max-width:768px){
-  .hero h1{font-size:2em;}
-  h2{font-size:2em;}
-}
+@media(max-width:768px){.hero h1{font-size:2em;} h2{font-size:2em;}}
 </style>
 </head>
-
 <body>
 
 <div class="bg"></div>
@@ -203,7 +76,7 @@ footer{
 </nav>
 
 <!-- HERO -->
-<section class="hero">
+<section class="hero show">
   <div class="profile"></div>
   <h1>Nafiu Ebrahim</h1>
   <div id="typing"></div>
@@ -211,7 +84,7 @@ footer{
 </section>
 
 <!-- ABOUT -->
-<section id="about">
+<section id="about" class="show">
   <h2>About Me</h2>
   <div class="about">
     I’m Nafiu Ebrahim — an entrepreneur focused on building powerful digital systems.
@@ -223,7 +96,7 @@ footer{
 </section>
 
 <!-- SKILLS -->
-<section id="skills">
+<section id="skills" class="show">
   <h2>Skills</h2>
   <div class="grid">
     <div class="card"><i class="fas fa-code"></i>Web Development</div>
@@ -234,7 +107,7 @@ footer{
 </section>
 
 <!-- PROJECTS -->
-<section id="projects">
+<section id="projects" class="show">
   <h2>Projects</h2>
   <div class="grid">
     <div class="card"><i class="fas fa-brain"></i>AI Systems</div>
@@ -244,7 +117,7 @@ footer{
 </section>
 
 <!-- CONTACT -->
-<section id="contact">
+<section id="contact" class="show">
   <h2>Contact</h2>
   <p>Let’s connect.</p>
   <div class="socials">
@@ -257,7 +130,7 @@ footer{
 <footer>© 2026 Nafiu Ebrahim</footer>
 
 <script>
-/* typing */
+/* AUTO TYPING EFFECT STARTS IMMEDIATELY */
 const words=["Entrepreneur","AI Automation","Web Developer","Trader"];
 let i=0,j=0,cur="",del=false;
 function type(){
@@ -265,23 +138,10 @@ function type(){
   document.getElementById("typing").textContent=cur.substring(0,j);
   if(!del && j<cur.length) j++;
   else if(del && j>0) j--;
-  else{
-    del=!del;
-    if(!del) i=(i+1)%words.length;
-  }
-  setTimeout(type, del?50:100);
+  else{ del=!del; if(!del) i=(i+1)%words.length;}
+  setTimeout(type,del?50:100);
 }
 type();
-
-/* scroll animation */
-const sections=document.querySelectorAll("section");
-window.addEventListener("scroll",()=>{
-  sections.forEach(sec=>{
-    if(sec.getBoundingClientRect().top<window.innerHeight-100){
-      sec.classList.add("show");
-    }
-  });
-});
 </script>
 
 </body>
