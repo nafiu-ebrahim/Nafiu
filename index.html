@@ -3,72 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NAFIU | Portfolio</title>
+    <title>Nafiu | Personal Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;400;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300;1,600&family=Inter:wght@200;400;900&display=swap" rel="stylesheet">
     <style>
-        body { background-color: #000; color: #fff; font-family: 'Plus Jakarta Sans', sans-serif; }
-        .bento-card { background: #0a0a0a; border: 1px solid #1a1a1a; border-radius: 2rem; transition: all 0.5s ease; overflow: hidden; }
-        .bento-card:hover { border-color: #333; transform: scale(1.01); background: #0f0f0f; }
-        .text-gradient { background: linear-gradient(to right, #fff, #666); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        body { background-color: #080808; color: #fff; font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .serif { font-family: 'Cormorant Garamond', serif; }
+        .glass-nav { background: rgba(0, 0, 0, 0.7); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(255,255,255,0.05); }
+        .fade-in { animation: fadeIn 2s ease-in; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .photo-frame { border: 1px solid rgba(255,255,255,0.1); padding: 10px; transition: 0.5s; }
+        .photo-frame:hover { border-color: rgba(255,255,255,0.5); }
     </style>
 </head>
-<body class="p-4 md:p-12 lg:p-24">
+<body class="selection:bg-white selection:text-black">
 
-    <header class="max-w-6xl mx-auto flex justify-between items-center mb-16">
-        <div class="text-xl font-extrabold tracking-tighter">NAFIU</div>
-        <div class="flex gap-6 text-[10px] uppercase tracking-[0.3em] opacity-50">
-            <span>Portfolio 2026</span>
-            <span>Based in Riyadh</span>
+    <nav class="fixed top-0 w-full z-50 glass-nav py-6">
+        <div class="max-w-5xl mx-auto px-6 flex justify-between items-center text-[10px] uppercase tracking-[0.4em] font-bold">
+            <a href="#home" class="hover:opacity-50 transition">Home</a>
+            <a href="#about" class="hover:opacity-50 transition">About</a>
+            <a href="#gallery" class="hover:opacity-50 transition">Gallery</a>
+            <a href="mailto:contact@nafiu.com" class="hover:opacity-50 transition">Contact</a>
         </div>
-    </header>
+    </nav>
 
-    <main class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-6">
-        
-        <div class="md:col-span-8 bento-card p-12 flex flex-col justify-end min-h-[400px]">
-            <h1 class="text-5xl md:text-7xl font-light tracking-tighter leading-none mb-8">
-                Building digital <br> <span class="font-extrabold text-gradient italic">legacies.</span>
-            </h1>
-            <p class="text-gray-500 text-lg max-w-md font-light">
-                Strategy-driven creator focused on technology, high-end markets, and global storytelling.
+    <section id="home" class="min-h-screen flex flex-col justify-center items-center px-6 pt-20 fade-in">
+        <h1 class="text-8xl md:text-[12rem] font-black tracking-tighter leading-none mb-4">NAFIU</h1>
+        <p class="serif italic text-2xl md:text-4xl text-gray-400">Strategist, Creator, Visionary</p>
+    </section>
+
+    <section id="about" class="max-w-5xl mx-auto px-6 py-32 grid md:grid-cols-2 gap-20 items-center">
+        <div class="photo-frame rounded-2xl overflow-hidden aspect-[3/4]">
+            <img src="me.jpg" alt="Nafiu" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-1000">
+        </div>
+        <div>
+            <h2 class="text-xs font-bold uppercase tracking-[0.3em] text-gray-500 mb-8">About Me</h2>
+            <p class="text-3xl font-light leading-snug mb-8">
+                I am a student of the game, currently building a path in <span class="serif italic">international tech markets</span> and digital strategy.
+            </p>
+            <p class="text-gray-500 leading-relaxed mb-6">
+                Based between the US and Saudi Arabia, I focus on the intersection of high-end consumer technology and market analytics. Whether it's the precision of Apple hardware or the data behind global sports, I'm driven by quality and execution.
+            </p>
+            <p class="text-gray-500 leading-relaxed">
+                Outside of my professional pursuits, I value luxury aesthetics, fine tailoring, and the art of digital storytelling.
             </p>
         </div>
+    </section>
 
-        <div class="md:col-span-4 bento-card relative group">
-            <img src="me.jpg" alt="Nafiu" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-700">
-            <div class="absolute bottom-6 left-6 bg-black/50 backdrop-blur-md px-4 py-2 rounded-full border border-white/10 text-[10px] font-bold tracking-widest uppercase">
-                Profile
-            </div>
-        </div>
-
-        <div class="md:col-span-4 bento-card p-10">
-            <h2 class="text-xs font-bold uppercase tracking-widest text-gray-600 mb-8">Interests</h2>
-            <ul class="space-y-4 text-sm font-medium">
-                <li class="flex justify-between border-b border-white/5 pb-2"><span>Tech Arbitrage</span><span class="text-gray-600">01</span></li>
-                <li class="flex justify-between border-b border-white/5 pb-2"><span>Market Analysis</span><span class="text-gray-600">02</span></li>
-                <li class="flex justify-between border-b border-white/5 pb-2"><span>Digital Content</span><span class="text-gray-600">03</span></li>
-                <li class="flex justify-between"><span>Luxury Fashion</span><span class="text-gray-600">04</span></li>
-            </ul>
-        </div>
-
-        <div class="md:col-span-8 bento-card p-10 bg-gradient-to-br from-[#0a0a0a] to-[#111]">
-            <h2 class="text-xs font-bold uppercase tracking-widest text-gray-600 mb-8">Latest Focus</h2>
-            <div class="flex flex-col md:flex-row justify-between items-end gap-6">
-                <p class="text-2xl font-light leading-snug">
-                    Developing a high-end hardware resale ecosystem across international borders.
-                </p>
-                <div class="w-full md:w-32 h-32 bg-white/5 rounded-2xl flex items-center justify-center text-3xl">
-                    
-                </div>
-            </div>
-        </div>
-
-    </main>
-
-    <footer class="max-w-6xl mx-auto mt-24 text-center">
-        <a href="mailto:contact@nafiu.com" class="text-4xl md:text-6xl font-extrabold tracking-tighter hover:text-gray-400 transition">Get in touch.</a>
-        <div class="mt-12 opacity-30 text-[10px] uppercase tracking-[0.5em]">Nafiu © 2026</div>
-    </footer>
-
-</body>
-</html>
+    <section id="gallery" class="max-w-5xl mx-auto px-6 py-32">
+        <h2 class="text-xs font-bold uppercase tracking-[0.3em] text-gray-500 mb-12 text-center">Interests & Aesthetic</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+            <div class="aspect-square bg-zinc
