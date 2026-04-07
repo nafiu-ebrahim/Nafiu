@@ -3,119 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nafiu Ebrahim | Portfolio</title>
+    <title>Nafiu Ebrahim | Entrepreneur</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;800&family=Outfit:wght@100;400;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;400;800&display=swap" rel="stylesheet">
     <style>
-        html { scroll-behavior: smooth; }
-        body { background-color: #010409; color: #f0f6fc; font-family: 'Plus Jakarta Sans', sans-serif; overflow-x: hidden; }
-        .outfit { font-family: 'Outfit', sans-serif; }
-        .glass-card { background: rgba(13, 17, 23, 0.7); border: 1px solid rgba(48, 54, 61, 0.5); border-radius: 1.5rem; backdrop-filter: blur(12px); }
-        .hero-glow { background: radial-gradient(circle at 50% 0%, rgba(59, 130, 246, 0.12) 0%, transparent 60%); }
-        .text-gradient { background: linear-gradient(to right, #ffffff, #3b82f6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .skill-badge { background: #0d1117; border: 1px solid #30363d; transition: all 0.3s ease; }
-        /* This fix prevents the text from breaking on mobile */
-        .responsive-title { font-size: clamp(2.5rem, 10vw, 8rem); line-height: 0.9; letter-spacing: -0.05em; }
+        body { background-color: #020617; color: #f8fafc; font-family: 'Plus Jakarta Sans', sans-serif; overflow-x: hidden; }
+        .hero-glow { background: radial-gradient(circle at 50% 50%, rgba(59, 130, 246, 0.1) 0%, transparent 80%); }
+        .nav-link { font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.2em; color: #94a3b8; transition: 0.3s; }
+        .nav-link:hover { color: #fff; }
+        .btn-cyan { background: #00BAF2; color: #000; font-weight: 900; transition: 0.4s; }
+        .btn-cyan:hover { background: #fff; transform: translateY(-3px); }
     </style>
 </head>
-<body class="selection:bg-blue-500/30">
-
+<body>
     <div class="hero-glow fixed inset-0 -z-10"></div>
 
-    <nav class="fixed top-0 w-full z-50 p-4">
-        <div class="max-w-7xl mx-auto flex justify-between items-center glass-card px-5 py-3 md:px-8 md:py-5">
-            <div class="text-xl font-black tracking-tighter outfit">N<span class="text-blue-500">.</span>E</div>
-            <div class="flex gap-4 md:gap-10 text-[9px] md:text-[10px] font-bold uppercase tracking-[0.2em] text-gray-500">
-                <a href="#about" class="hover:text-white transition">About</a>
-                <a href="#skills" class="hover:text-white transition">Skills</a>
-                <a href="mailto:ayonk5578@gmail.com" class="text-white border-b border-blue-500">Email</a>
+    <nav class="fixed top-0 w-full z-50 p-4 md:p-8">
+        <div class="max-w-6xl mx-auto flex justify-between items-center bg-slate-900/50 backdrop-blur-xl border border-white/5 rounded-2xl px-6 py-4">
+            <div class="text-xl font-black tracking-tighter">NAFIU<span class="text-blue-500">.</span></div>
+            <div class="hidden md:flex gap-8">
+                <a href="index.html" class="nav-link text-white">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="expertise.html" class="nav-link">Expertise</a>
+                <a href="mailto:ayonk5578@gmail.com" class="nav-link">Contact</a>
             </div>
+            <a href="mailto:ayonk5578@gmail.com" class="md:hidden text-[10px] font-bold uppercase tracking-widest bg-blue-600 px-4 py-2 rounded-lg">Contact</a>
         </div>
     </nav>
 
-    <section class="min-h-screen flex flex-col justify-center px-6 pt-24 md:pt-32">
-        <div class="max-w-7xl mx-auto w-full">
-            <div class="inline-block px-4 py-1.5 rounded-full glass-card border-blue-500/30 text-blue-400 text-[9px] font-bold uppercase tracking-[0.3em] mb-8 md:mb-12">
-                Entrepreneur 2026
-            </div>
-            
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <div class="order-2 lg:order-1">
-                    <h1 class="responsive-title font-black outfit mb-8">
-                        NAFIU <br> <span class="text-gradient uppercase">EBRAHIM.</span>
-                    </h1>
-                    <p class="text-lg md:text-2xl font-light text-gray-400 leading-snug max-w-xl mb-10">
-                        A digital architect specializing in <span class="text-white font-medium">Web Systems</span>, 
-                        <span class="text-white font-medium">AI Automation</span>, and <span class="text-white font-medium">Trading</span>.
-                    </p>
-                    <div class="flex gap-4">
-                        <a href="https://www.instagram.com/nafiu_fmp/" target="_blank" class="glass-card p-5 text-xl hover:text-blue-400 transition"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.facebook.com/NafiuEbrahim2" target="_blank" class="glass-card p-5 text-xl hover:text-blue-400 transition"><i class="fa-brands fa-facebook-f"></i></a>
-                    </div>
-                </div>
-                
-                <div class="order-1 lg:order-2">
-                    <div class="glass-card p-2 aspect-square max-w-[320px] md:max-w-[450px] mx-auto overflow-hidden rotate-[1deg]">
-                        <img src="me.jpg" alt="Nafiu" class="w-full h-full object-cover rounded-2xl grayscale hover:grayscale-0 transition duration-700">
-                    </div>
-                </div>
-            </div>
+    <section class="min-h-screen flex flex-col justify-center items-center text-center px-6 pt-20">
+        <div class="mb-8 inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-[10px] font-bold uppercase tracking-widest">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Available for new projects
+        </div>
+        <h1 class="text-5xl md:text-9xl font-black tracking-tighter mb-6 leading-none">
+            Hi, I’m <br> <span class="bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">Nafiu Ebrahim</span>
+        </h1>
+        <p class="text-gray-400 text-lg md:text-2xl max-w-2xl mb-12 font-light">
+            I engineer professional <span class="text-white">Web Systems</span>, AI automations, and trade global markets. Let's build something remarkable.
+        </p>
+        <div class="flex flex-col md:flex-row gap-4">
+            <a href="expertise.html" class="btn-cyan px-10 py-5 rounded-2xl text-sm uppercase tracking-widest">View My Work</a>
+            <a href="mailto:ayonk5578@gmail.com" class="bg-slate-800 text-white px-10 py-5 rounded-2xl text-sm uppercase tracking-widest border border-white/10 hover:bg-slate-700 transition">Get in Touch</a>
         </div>
     </section>
-
-    <section id="about" class="max-w-7xl mx-auto px-6 py-24 md:py-40">
-        <div class="glass-card p-8 md:p-20 border-blue-500/10">
-            <h2 class="text-[10px] font-bold text-blue-500 uppercase tracking-[0.5em] mb-8">The Narrative</h2>
-            <h3 class="text-3xl md:text-6xl font-bold outfit mb-8 leading-tight">
-                Beyond Code. <br> <span class="text-gray-500 italic font-light">Inside the Market.</span>
-            </h3>
-            <div class="space-y-6 text-lg md:text-xl text-gray-400 font-light leading-relaxed">
-                <p>
-                    I don't just build websites; I engineer digital ecosystems. My journey is defined by a curiosity for how the world moves—from the logic of <span class="text-white font-bold">Full-Stack Apps</span> to the volatility of <span class="text-white font-bold">Global Markets</span>.
-                </p>
-                <p>
-                    Currently, I am deep-diving into <span class="text-white font-bold">AI Automation</span>, making machines work harder so humans can think bigger. As an entrepreneur, my goal is simple: solve complex problems with elegant, high-impact solutions.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section id="skills" class="max-w-7xl mx-auto px-6 py-20">
-        <h2 class="text-4xl md:text-7xl font-black outfit mb-12 uppercase">Expertise</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
-            <div class="skill-badge p-8 rounded-3xl">
-                <i class="fa-solid fa-code text-3xl text-blue-500 mb-6"></i>
-                <h4 class="text-xl font-bold mb-2">Web Systems</h4>
-                <p class="text-gray-500 text-sm">Scalable, high-performance web architecture.</p>
-            </div>
-            <div class="skill-badge p-8 rounded-3xl">
-                <i class="fa-solid fa-robot text-3xl text-purple-500 mb-6"></i>
-                <h4 class="text-xl font-bold mb-2">AI Intelligence</h4>
-                <p class="text-gray-500 text-sm">Custom LLM workflows and automations.</p>
-            </div>
-            <div class="skill-badge p-8 rounded-3xl">
-                <i class="fa-solid fa-chart-line text-3xl text-emerald-500 mb-6"></i>
-                <h4 class="text-xl font-bold mb-2">Trading</h4>
-                <p class="text-gray-500 text-sm">Statistical market analysis and navigation.</p>
-            </div>
-            <div class="skill-badge p-8 rounded-3xl">
-                <i class="fa-solid fa-earth-americas text-3xl text-orange-500 mb-6"></i>
-                <h4 class="text-xl font-bold mb-2">Travel</h4>
-                <p class="text-gray-500 text-sm">Global perspectives from Riyadh to NY.</p>
-            </div>
-        </div>
-    </section>
-
-    <footer class="max-w-7xl mx-auto px-6 py-20 text-center">
-        <div class="glass-card p-12 md:p-24 mb-12">
-            <h2 class="text-3xl md:text-7xl font-black outfit mb-8">LET'S CONNECT.</h2>
-            <a href="mailto:ayonk5578@gmail.com" class="inline-block bg-white text-black px-8 py-4 rounded-full font-black text-[10px] tracking-widest uppercase hover:bg-blue-600 hover:text-white transition">
-                Send Email
-            </a>
-        </div>
-        <p class="text-[9px] text-gray-700 tracking-[0.8em] uppercase">Nafiu Ebrahim © 2026</p>
-    </footer>
-
 </body>
 </html>
