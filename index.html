@@ -3,79 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NAFIU | International Trade & Strategy</title>
+    <title>NAFIU | Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Outfit:wght@100;400;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;400;800&display=swap" rel="stylesheet">
     <style>
-        body { background-color: #050505; color: #ffffff; font-family: 'Outfit', sans-serif; overflow-x: hidden; }
-        .heading-font { font-family: 'Space Grotesk', sans-serif; }
-        .glass { background: rgba(255, 255, 255, 0.02); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.05); }
-        .silver-glow:hover { border-color: rgba(192, 192, 192, 0.5); box-shadow: 0 0 30px rgba(255, 255, 255, 0.05); }
-        .gradient-text { background: linear-gradient(to right, #ffffff, #666666); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .status-dot { height: 8px; width: 8px; background-color: #00ff88; border-radius: 50%; display: inline-block; box-shadow: 0 0 10px #00ff88; }
+        body { background-color: #000; color: #fff; font-family: 'Plus Jakarta Sans', sans-serif; }
+        .bento-card { background: #0a0a0a; border: 1px solid #1a1a1a; border-radius: 2rem; transition: all 0.5s ease; overflow: hidden; }
+        .bento-card:hover { border-color: #333; transform: scale(1.01); background: #0f0f0f; }
+        .text-gradient { background: linear-gradient(to right, #fff, #666); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
     </style>
 </head>
-<body class="selection:bg-white selection:text-black">
+<body class="p-4 md:p-12 lg:p-24">
 
-    <nav class="fixed top-0 w-full z-50 px-6 py-8">
-        <div class="max-w-7xl mx-auto flex justify-between items-center glass p-4 rounded-2xl">
-            <span class="heading-font font-bold text-2xl tracking-tighter">NAFIU<span class="text-gray-600">.</span></span>
-            <div class="flex gap-8 text-[10px] uppercase tracking-[0.3em] font-medium text-gray-400">
-                <a href="#about" class="hover:text-white transition">Inventory</a>
-                <a href="#strategy" class="hover:text-white transition">Strategy</a>
-                <a href="#connect" class="bg-white text-black px-4 py-2 rounded-lg font-black ml-4 hover:bg-gray-200 transition">Contact</a>
-            </div>
+    <header class="max-w-6xl mx-auto flex justify-between items-center mb-16">
+        <div class="text-xl font-extrabold tracking-tighter">NAFIU</div>
+        <div class="flex gap-6 text-[10px] uppercase tracking-[0.3em] opacity-50">
+            <span>Portfolio 2026</span>
+            <span>Based in Riyadh</span>
         </div>
-    </nav>
+    </header>
 
-    <section class="min-h-screen flex flex-col justify-center items-center px-6 pt-32">
-        <div class="inline-flex items-center gap-3 px-4 py-2 glass rounded-full mb-10 silver-glow transition">
-            <span class="status-dot animate-pulse"></span>
-            <span class="text-[10px] uppercase tracking-widest font-bold">Resale Operations Active : Saudi Arabia / US</span>
-        </div>
+    <main class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-6">
         
-        <h1 class="heading-font text-7xl md:text-[12rem] font-black leading-none tracking-tighter text-center gradient-text">
-            GLOBAL <br> ARBITRAGE
-        </h1>
-        
-        <p class="max-w-2xl text-center text-gray-500 mt-10 text-lg md:text-xl font-light leading-relaxed">
-            High-end hardware procurement and international resale strategy. Specializing in the Apple ecosystem and professional market analytics.
-        </p>
-
-        <div class="mt-16 flex gap-6">
-            <div class="glass p-8 rounded-3xl silver-glow transition text-center min-w-[160px]">
-                <div class="text-3xl font-bold heading-font">14+</div>
-                <div class="text-[9px] uppercase tracking-widest text-gray-600 mt-2">Pro Models Sold</div>
-            </div>
-            <div class="glass p-8 rounded-3xl silver-glow transition text-center min-w-[160px]">
-                <div class="text-3xl font-bold heading-font">90%</div>
-                <div class="text-[9px] uppercase tracking-widest text-gray-600 mt-2">Battery Health Min.</div>
-            </div>
+        <div class="md:col-span-8 bento-card p-12 flex flex-col justify-end min-h-[400px]">
+            <h1 class="text-5xl md:text-7xl font-light tracking-tighter leading-none mb-8">
+                Building digital <br> <span class="font-extrabold text-gradient italic">legacies.</span>
+            </h1>
+            <p class="text-gray-500 text-lg max-w-md font-light">
+                Strategy-driven creator focused on technology, high-end markets, and global storytelling.
+            </p>
         </div>
-    </section>
 
-    <section id="strategy" class="max-w-7xl mx-auto px-6 py-32 grid md:grid-cols-2 gap-12">
-        <div class="glass p-12 rounded-[3rem] silver-glow transition group">
-            <h3 class="heading-font text-4xl font-bold mb-6">Hardware <br> Logistics</h3>
-            <p class="text-gray-500 mb-8 leading-relaxed">Sourcing pristine MacBooks and iPhones for international export. Deep expertise in battery cycle optimization and resale value preservation.</p>
-            <div class="h-64 bg-zinc-900 rounded-3xl overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover opacity-50 group-hover:opacity-100 transition duration-500 grayscale group-hover:grayscale-0">
+        <div class="md:col-span-4 bento-card relative group">
+            <img src="me.jpg" alt="Nafiu" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-700">
+            <div class="absolute bottom-6 left-6 bg-black/50 backdrop-blur-md px-4 py-2 rounded-full border border-white/10 text-[10px] font-bold tracking-widest uppercase">
+                Profile
             </div>
         </div>
 
-        <div class="glass p-12 rounded-[3rem] silver-glow transition group">
-            <h3 class="heading-font text-4xl font-bold mb-6">Market <br> Analytics</h3>
-            <p class="text-gray-500 mb-8 leading-relaxed">Strategic wagering on international football and cricket. Leveraging statistical models to capitalize on market inefficiencies.</p>
-            <div class="h-64 bg-zinc-900 rounded-3xl overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover opacity-50 group-hover:opacity-100 transition duration-500 grayscale group-hover:grayscale-0">
+        <div class="md:col-span-4 bento-card p-10">
+            <h2 class="text-xs font-bold uppercase tracking-widest text-gray-600 mb-8">Interests</h2>
+            <ul class="space-y-4 text-sm font-medium">
+                <li class="flex justify-between border-b border-white/5 pb-2"><span>Tech Arbitrage</span><span class="text-gray-600">01</span></li>
+                <li class="flex justify-between border-b border-white/5 pb-2"><span>Market Analysis</span><span class="text-gray-600">02</span></li>
+                <li class="flex justify-between border-b border-white/5 pb-2"><span>Digital Content</span><span class="text-gray-600">03</span></li>
+                <li class="flex justify-between"><span>Luxury Fashion</span><span class="text-gray-600">04</span></li>
+            </ul>
+        </div>
+
+        <div class="md:col-span-8 bento-card p-10 bg-gradient-to-br from-[#0a0a0a] to-[#111]">
+            <h2 class="text-xs font-bold uppercase tracking-widest text-gray-600 mb-8">Latest Focus</h2>
+            <div class="flex flex-col md:flex-row justify-between items-end gap-6">
+                <p class="text-2xl font-light leading-snug">
+                    Developing a high-end hardware resale ecosystem across international borders.
+                </p>
+                <div class="w-full md:w-32 h-32 bg-white/5 rounded-2xl flex items-center justify-center text-3xl">
+                    
+                </div>
             </div>
         </div>
-    </section>
 
-    <footer class="max-w-7xl mx-auto px-6 py-20 border-t border-zinc-900 text-center">
-        <h2 class="heading-font text-4xl font-bold mb-4">Let's talk business.</h2>
-        <p class="text-gray-600 mb-10">Strategic partnerships and resale inquiries.</p>
-        <a href="mailto:your-email@gmail.com" class="text-2xl font-light hover:text-gray-400 transition underline underline-offset-8 decoration-zinc-800">nafiu@strategy.com</a>
+    </main>
+
+    <footer class="max-w-6xl mx-auto mt-24 text-center">
+        <a href="mailto:contact@nafiu.com" class="text-4xl md:text-6xl font-extrabold tracking-tighter hover:text-gray-400 transition">Get in touch.</a>
+        <div class="mt-12 opacity-30 text-[10px] uppercase tracking-[0.5em]">Nafiu © 2026</div>
     </footer>
 
 </body>
