@@ -3,131 +3,280 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JK Foreign Brands USA Inc | Luxury Couture & Distribution</title>
+    <title>JK Foreign Brands USA Inc | Luxury Couture</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Inter:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Inter:wght@200;300;400;500;600&display=swap" rel="stylesheet">
     <style>
-        :root { --dark: #12100e; --gold: #d4af37; }
-        body { font-family: 'Inter', sans-serif; background-color: var(--dark); color: #fff; line-height: 1.6; }
+        :root { --dark: #0f0d0c; --gold: #d4af37; --light-gold: #e8c872; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--dark); color: #fff; }
         .serif { font-family: 'Cormorant Garamond', serif; }
-        .gold-border { border-color: var(--gold); }
-        .gold-text { color: var(--gold); }
-        /* Professional Section Spacing */
-        .section-depth { padding-top: 8rem; padding-bottom: 8rem; }
-        /* Component Overlays */
-        .overlay { background: linear-gradient(180deg, rgba(18, 16, 14, 0) 0%, rgba(18, 16, 14, 0.95) 100%); }
+        .text-gold { color: var(--gold); }
+        .border-gold { border-color: var(--gold); }
+        .bg-gold { background-color: var(--gold); }
+        
+        /* Smooth Scrolling Offset for Sticky Nav */
+        section { scroll-margin-top: 100px; }
+        
+        /* Premium Overlays */
+        .hero-overlay { background: linear-gradient(to right, rgba(15, 13, 12, 0.9) 0%, rgba(15, 13, 12, 0.4) 100%); }
+        .card-overlay { background: linear-gradient(to top, #0f0d0c 0%, rgba(15, 13, 12, 0) 100%); }
     </style>
 </head>
-<body class="antialiased">
+<body class="antialiased selection:bg-yellow-900 selection:text-white">
 
-    <nav class="fixed w-full z-[100] flex justify-between items-center px-16 py-6 border-b border-white/10 bg-[#12100e]/80 backdrop-blur-md">
-        <div class="flex items-center gap-4">
-            <span class="text-2xl font-bold tracking-tighter italic">JK</span>
-            <div class="h-6 w-[1px] bg-white/20"></div>
-            <span class="text-xs uppercase tracking-[0.2em]">Foreign Brands USA Inc</span>
+    <nav class="fixed w-full z-50 transition-all duration-300 bg-[#0f0d0c]/95 backdrop-blur-md border-b border-white/5 py-4 px-8 md:px-16 flex justify-between items-center">
+        <a href="#" class="flex items-center gap-4 group">
+            <img src="images/image_083fc6.png" alt="JK Foreign Brands" class="h-14 w-auto group-hover:opacity-80 transition-opacity">
+        </a>
+        
+        <div class="hidden lg:flex items-center gap-12 text-[11px] uppercase tracking-[0.3em] font-medium text-gray-300">
+            <a href="#collections" class="hover:text-[#d4af37] transition-colors duration-300">Collections</a>
+            <a href="#tailoring" class="hover:text-[#d4af37] transition-colors duration-300">Tailoring</a>
+            <a href="#heritage" class="hover:text-[#d4af37] transition-colors duration-300">Heritage</a>
+            <a href="#stories" class="hover:text-[#d4af37] transition-colors duration-300">Client Stories</a>
+            <a href="#inquiry" class="hover:text-[#d4af37] transition-colors duration-300">Inquiry</a>
         </div>
-        <div class="hidden xl:flex text-[11px] uppercase tracking-[0.3em] gap-10">
-            <a href="#shop" class="hover:text-gold-text transition-all">Collections</a>
-            <a href="#services" class="hover:text-gold-text transition-all">Tailoring</a>
-            <a href="#about" class="hover:text-gold-text transition-all">Heritage</a>
-            <a href="#reviews" class="hover:text-gold-text transition-all">Client Stories</a>
-            <a href="#contact" class="hover:text-gold-text transition-all">Inquiry</a>
-        </div>
-        <a href="https://wa.me/19175167871" class="border border-white/20 px-8 py-3 text-[10px] uppercase tracking-[0.2em] hover:bg-white hover:text-black transition-all">Book Private Session</a>
+
+        <a href="https://wa.me/19175167871" target="_blank" class="bg-[#d4af37] text-black px-8 py-3 text-[10px] uppercase tracking-[0.2em] font-bold hover:bg-[#e8c872] transition-colors shadow-[0_0_15px_rgba(212,175,55,0.3)]">
+            Book Appointment
+        </a>
     </nav>
 
-    <header class="relative h-screen flex flex-col justify-center px-16">
-        <img src="YOUR_HERO_IMAGE_URL" class="absolute inset-0 w-full h-full object-cover grayscale-[0.2]">
-        <div class="absolute inset-0 bg-black/40"></div>
-        <div class="relative z-10 max-w-4xl">
-            <span class="text-gold-text text-[10px] uppercase tracking-[0.4em] mb-6 block">Est. 2026 • New York</span>
-            <h1 class="serif text-[9rem] leading-[0.8] mb-10">Traditional Artistry.<br>Modern <span class="italic">Standards.</span></h1>
-            <p class="text-xl font-light text-gray-200 w-2/3 mb-12">Expertly curated South Asian couture, precision tailoring, and high-end logistical distribution across North America.</p>
-            <div class="flex gap-6">
-                <button class="bg-gold text-black px-12 py-5 font-bold uppercase text-[10px] tracking-[0.2em] hover:bg-amber-400">Explore Collection</button>
-                <button class="border border-white/30 px-12 py-5 uppercase text-[10px] tracking-[0.2em] hover:bg-white/10">Corporate Inquiries</button>
+    <header class="relative h-screen min-h-[800px] flex items-center">
+        <img src="images/image_083fe3.png" alt="JK Models" class="absolute inset-0 w-full h-full object-cover object-top opacity-80">
+        <div class="absolute inset-0 hero-overlay"></div>
+        
+        <div class="relative z-10 px-8 md:px-16 max-w-4xl pt-20">
+            <p class="text-[#d4af37] text-[11px] uppercase tracking-[0.4em] mb-6">South Asian Couture • New York, NY</p>
+            <h1 class="serif text-6xl md:text-8xl lg:text-[9rem] leading-[0.9] mb-8 font-light">
+                Traditional<br>
+                <span class="italic text-[#d4af37]">Elegance,</span><br>
+                Heart of NYC
+            </h1>
+            <p class="text-lg md:text-xl font-light text-gray-300 w-full md:w-3/4 mb-12 leading-relaxed">
+                Bridal lehengas, silk sarees, and designer menswear curated for the South Asian community. Experience in-house tailoring and same-week service.
+            </p>
+            <div class="flex flex-wrap gap-6">
+                <a href="#collections" class="bg-transparent border border-[#d4af37] text-[#d4af37] px-10 py-4 text-[11px] uppercase tracking-[0.2em] hover:bg-[#d4af37] hover:text-black transition-all">
+                    Explore Collection
+                </a>
+                <a href="tel:+19175167871" class="bg-transparent border border-white/20 text-white px-10 py-4 text-[11px] uppercase tracking-[0.2em] hover:bg-white hover:text-black transition-all">
+                    Call Boutique
+                </a>
             </div>
         </div>
     </header>
 
-    <section id="shop" class="section-depth px-16 bg-[#F9F7F2] text-black">
-        <div class="flex justify-between items-end mb-20">
-            <h2 class="serif text-8xl">Couture Archives</h2>
-            <p class="max-w-xs text-sm text-gray-500 italic">"Luxury is in each detail. From the thread-work of the lehenga to the cut of the sherwani."</p>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-            <div class="group relative h-[700px] overflow-hidden">
-                <img src="YOUR_IMAGE_1" class="w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-105">
-                <div class="absolute inset-0 overlay"></div>
-                <div class="absolute bottom-10 left-10 text-white">
-                    <h3 class="serif text-4xl mb-2">Bridal Collection</h3>
-                    <p class="text-[10px] uppercase tracking-[0.2em] opacity-70">Custom In-House Tailoring</p>
-                </div>
-            </div>
-            <div class="group relative h-[700px] overflow-hidden">
-                <img src="YOUR_IMAGE_2" class="w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-105">
-                <div class="absolute inset-0 overlay"></div>
-                <div class="absolute bottom-10 left-10 text-white">
-                    <h3 class="serif text-4xl mb-2">Luxury Sarees</h3>
-                    <p class="text-[10px] uppercase tracking-[0.2em] opacity-70">Silk & Chiffon Heritage</p>
-                </div>
-            </div>
-            <div class="group relative h-[700px] overflow-hidden">
-                <img src="YOUR_IMAGE_3" class="w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-105">
-                <div class="absolute inset-0 overlay"></div>
-                <div class="absolute bottom-10 left-10 text-white">
-                    <h3 class="serif text-4xl mb-2">Groom Couture</h3>
-                    <p class="text-[10px] uppercase tracking-[0.2em] opacity-70">Modern Sherwani Line</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="reviews" class="section-depth px-16">
+    <section id="collections" class="py-32 px-8 md:px-16 bg-[#141210]">
         <div class="text-center mb-20">
-            <span class="text-gold-text text-[10px] uppercase tracking-[0.3em] mb-4 block">Client Stories</span>
-            <h2 class="serif text-7xl">What Our Customers Say</h2>
+            <h2 class="serif text-5xl md:text-7xl mb-6">Dressed for Every Occasion</h2>
+            <p class="text-[#d4af37] text-[11px] uppercase tracking-[0.3em]">Our Exclusive Archives</p>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-            <div class="border border-white/10 p-12 hover:border-gold-border transition-all">
-                <div class="flex gap-4 mb-8">
-                    <img src="https://i.pravatar.cc/100?u=Ananya" class="w-16 h-16 rounded-full object-cover">
-                    <div><h4 class="font-bold">Ananya Sharma</h4><p class="text-[10px] uppercase opacity-50">Queens, NY</p></div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 h-auto lg:h-[700px]">
+            <a href="https://wa.me/19175167871" class="group relative overflow-hidden block h-[500px] lg:h-full">
+                <img src="images/image_084000.png" alt="Wedding Wear" class="absolute inset-0 w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-105">
+                <div class="absolute inset-0 card-overlay"></div>
+                <div class="absolute bottom-0 left-0 p-10 w-full">
+                    <p class="text-[#d4af37] text-[10px] uppercase tracking-[0.2em] mb-2">Bridal Collection</p>
+                    <h3 class="serif text-4xl mb-4">Wedding Wear</h3>
+                    <p class="text-sm text-gray-300 mb-6 font-light">Lehengas, bridal suits & groom sherwanis for your most special day.</p>
+                    <span class="text-[11px] uppercase tracking-[0.2em] border-b border-[#d4af37] pb-1 hover:text-[#d4af37] transition-colors">Book a Fitting &rarr;</span>
                 </div>
-                <p class="text-gray-400 italic">"The speed of the tailoring was unmatched. I had a complex bridal lehenga adjusted in 48 hours. Professional to the core."</p>
+            </a>
+
+            <a href="https://wa.me/19175167871" class="group relative overflow-hidden block h-[500px] lg:h-full">
+                <img src="images/image_084007.png" alt="Daily Essentials" class="absolute inset-0 w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-105">
+                <div class="absolute inset-0 card-overlay"></div>
+                <div class="absolute bottom-0 left-0 p-10 w-full">
+                    <p class="text-[#d4af37] text-[10px] uppercase tracking-[0.2em] mb-2">Everyday Elegance</p>
+                    <h3 class="serif text-4xl mb-4">Party & Fusion</h3>
+                    <p class="text-sm text-gray-300 mb-6 font-light">Silk sarees, salwar suits & modern fusion wear for Eid, parties & events.</p>
+                    <span class="text-[11px] uppercase tracking-[0.2em] border-b border-[#d4af37] pb-1 hover:text-[#d4af37] transition-colors">Book a Fitting &rarr;</span>
+                </div>
+            </a>
+
+            <a href="https://wa.me/19175167871" class="group relative overflow-hidden block h-[500px] lg:h-full">
+                <img src="images/image_084021.png" alt="Jewelry and Accessories" class="absolute inset-0 w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-105">
+                <div class="absolute inset-0 card-overlay"></div>
+                <div class="absolute bottom-0 left-0 p-10 w-full">
+                    <p class="text-[#d4af37] text-[10px] uppercase tracking-[0.2em] mb-2">Complete The Look</p>
+                    <h3 class="serif text-4xl mb-4">Couture Details</h3>
+                    <p class="text-sm text-gray-300 mb-6 font-light">Intricate embroidery, hand-stitched detailing, and perfect accessorizing.</p>
+                    <span class="text-[11px] uppercase tracking-[0.2em] border-b border-[#d4af37] pb-1 hover:text-[#d4af37] transition-colors">Book a Fitting &rarr;</span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section id="tailoring" class="py-32 px-8 md:px-16 border-t border-white/5">
+        <div class="text-center mb-20">
+            <p class="text-[#d4af37] text-[11px] uppercase tracking-[0.3em] mb-4">Why Choose Us</p>
+            <h2 class="serif text-5xl md:text-7xl">The JK Difference</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+            <div class="border border-white/10 p-12 hover:border-[#d4af37]/50 transition-colors bg-white/[0.02]">
+                <div class="w-12 h-12 border border-[#d4af37] rounded-full flex items-center justify-center mb-8 mx-auto md:mx-0">
+                    <span class="text-[#d4af37] text-xl">✂</span>
+                </div>
+                <h4 class="serif text-3xl mb-4 text-center md:text-left">In-House Tailoring</h4>
+                <p class="text-gray-400 font-light text-sm leading-relaxed text-center md:text-left">Every outfit altered to your exact measurements by our expert tailors on-site. Perfect fit, guaranteed without sending garments away.</p>
             </div>
-            <div class="border border-white/10 p-12 hover:border-gold-border transition-all">
-                <div class="flex gap-4 mb-8">
-                    <img src="https://i.pravatar.cc/100?u=Rohan" class="w-16 h-16 rounded-full object-cover">
-                    <div><h4 class="font-bold">Rohan Patel</h4><p class="text-[10px] uppercase opacity-50">Flatbush, Brooklyn</p></div>
+            <div class="border border-white/10 p-12 hover:border-[#d4af37]/50 transition-colors bg-white/[0.02]">
+                <div class="w-12 h-12 border border-[#d4af37] rounded-full flex items-center justify-center mb-8 mx-auto md:mx-0">
+                    <span class="text-[#d4af37] text-xl">✨</span>
                 </div>
-                <p class="text-gray-400 italic">"Finally, a place in NYC that treats Desi attire with the respect of a high-end fashion house. My Sherwani fit perfectly."</p>
+                <h4 class="serif text-3xl mb-4 text-center md:text-left">Premium Quality</h4>
+                <p class="text-gray-400 font-light text-sm leading-relaxed text-center md:text-left">Sourced directly from top designers in India & Pakistan — authentic fabrics, real zardozi work, and genuine heavy kundan.</p>
             </div>
-            <div class="border border-white/10 p-12 hover:border-gold-border transition-all">
-                <div class="flex gap-4 mb-8">
-                    <img src="https://i.pravatar.cc/100?u=Zara" class="w-16 h-16 rounded-full object-cover">
-                    <div><h4 class="font-bold">Zara Khan</h4><p class="text-[10px] uppercase opacity-50">Jamaica, Queens</p></div>
+            <div class="border border-white/10 p-12 hover:border-[#d4af37]/50 transition-colors bg-white/[0.02]">
+                <div class="w-12 h-12 border border-[#d4af37] rounded-full flex items-center justify-center mb-8 mx-auto md:mx-0">
+                    <span class="text-[#d4af37] text-xl">⏱</span>
                 </div>
-                <p class="text-gray-400 italic">"The fabric quality is incredible. They sourced exactly what I wanted from India, and the alterations were seamless."</p>
+                <h4 class="serif text-3xl mb-4 text-center md:text-left">Fast Local Service</h4>
+                <p class="text-gray-400 font-light text-sm leading-relaxed text-center md:text-left">Based right here in New York. We offer same-week alterations, fast local pickup, and one-on-one personal styling by appointment.</p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center pt-12 border-t border-white/5">
+            <div>
+                <h5 class="serif text-5xl text-[#d4af37] mb-2">500+</h5>
+                <p class="text-[10px] uppercase tracking-[0.2em] text-gray-500">Brides Dressed</p>
+            </div>
+            <div>
+                <h5 class="serif text-5xl text-[#d4af37] mb-2">10+</h5>
+                <p class="text-[10px] uppercase tracking-[0.2em] text-gray-500">Years in Fashion</p>
+            </div>
+            <div>
+                <h5 class="serif text-5xl text-[#d4af37] mb-2">2K+</h5>
+                <p class="text-[10px] uppercase tracking-[0.2em] text-gray-500">Happy Clients</p>
+            </div>
+            <div>
+                <h5 class="serif text-5xl text-[#d4af37] mb-2">48<span class="text-3xl">hr</span></h5>
+                <p class="text-[10px] uppercase tracking-[0.2em] text-gray-500">Alteration Turnaround</p>
             </div>
         </div>
     </section>
 
-    <footer id="contact" class="px-16 py-24 border-t border-white/10 bg-[#0a0908]">
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-20">
-            <div class="col-span-2">
-                <h3 class="serif text-5xl mb-8">JK Foreign Brands USA Inc</h3>
-                <p class="text-gray-500 w-2/3">The definitive partner for premium South Asian couture and logistical excellence in North America.</p>
+    <section id="heritage" class="py-32 px-8 md:px-16 bg-[#141210]">
+        <div class="max-w-4xl mx-auto text-center">
+            <img src="images/image_083fc6.png" class="h-24 mx-auto mb-10 opacity-80">
+            <h2 class="serif text-5xl md:text-6xl mb-8">Embrace Your Heritage</h2>
+            <p class="text-lg text-gray-300 font-light leading-relaxed mb-8">
+                JK Foreign Brands was established to bring the absolute pinnacle of South Asian artistry to the United States. We understand that purchasing a bridal lehenga or a tailored sherwani is not just shopping—it is a cultural milestone.
+            </p>
+            <p class="text-lg text-gray-300 font-light leading-relaxed">
+                By controlling our own supply chain and employing master tailors directly in New York, we eliminate the anxiety of overseas ordering. What you see is what you get, fitted perfectly to your body, delivered on your timeline.
+            </p>
+        </div>
+    </section>
+
+    <section id="stories" class="py-32 px-8 md:px-16 border-t border-white/5">
+        <div class="text-center mb-20">
+            <p class="text-[#d4af37] text-[11px] uppercase tracking-[0.3em] mb-4">Real Stories</p>
+            <h2 class="serif text-5xl md:text-7xl">What Our Customers <span class="italic text-[#d4af37]">Say</span></h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="border border-white/10 p-10 bg-white/[0.02]">
+                <div class="text-[#d4af37] text-lg tracking-widest mb-6">★★★★★</div>
+                <p class="font-light text-gray-300 italic mb-8 leading-relaxed h-32">"I got my wedding lehenga and all my function outfits from JK. The quality is incredible and the tailoring was absolutely flawless. Felt like a true bride."</p>
+                <div class="flex items-center gap-4 border-t border-white/10 pt-6">
+                    <div class="w-12 h-12 rounded-full bg-[#1a1714] border border-[#d4af37] flex items-center justify-center text-[#d4af37] serif text-xl">S</div>
+                    <div>
+                        <h6 class="font-medium text-sm">Sabrina R.</h6>
+                        <p class="text-[10px] text-gray-500 uppercase">Jackson Heights, Queens</p>
+                    </div>
+                </div>
             </div>
+
+            <div class="border border-white/10 p-10 bg-white/[0.02]">
+                <div class="text-[#d4af37] text-lg tracking-widest mb-6">★★★★★</div>
+                <p class="font-light text-gray-300 italic mb-8 leading-relaxed h-32">"Finally a place in NYC with beautiful, authentic clothes. My sherwani fit like a glove and the staff helped me style the entire look. Highly recommend."</p>
+                <div class="flex items-center gap-4 border-t border-white/10 pt-6">
+                    <div class="w-12 h-12 rounded-full bg-[#1a1714] border border-[#d4af37] flex items-center justify-center text-[#d4af37] serif text-xl">F</div>
+                    <div>
+                        <h6 class="font-medium text-sm">Fahim A.</h6>
+                        <p class="text-[10px] text-gray-500 uppercase">Flatbush, Brooklyn</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border border-white/10 p-10 bg-white/[0.02]">
+                <div class="text-[#d4af37] text-lg tracking-widest mb-6">★★★★★</div>
+                <p class="font-light text-gray-300 italic mb-8 leading-relaxed h-32">"Got both my sister's wedding outfits and mine altered here within 48 hours before the big event. Lifesavers! The quality and speed is unmatched."</p>
+                <div class="flex items-center gap-4 border-t border-white/10 pt-6">
+                    <div class="w-12 h-12 rounded-full bg-[#1a1714] border border-[#d4af37] flex items-center justify-center text-[#d4af37] serif text-xl">N</div>
+                    <div>
+                        <h6 class="font-medium text-sm">Nadia T.</h6>
+                        <p class="text-[10px] text-gray-500 uppercase">Jamaica, Queens</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="inquiry" class="py-24 px-8 md:px-16 bg-[#0a0908] border-t border-[#d4af37]/20">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-16 lg:gap-8">
+            
+            <div class="col-span-1 md:col-span-1">
+                <img src="images/image_083fc6.png" class="h-16 mb-6">
+                <p class="text-sm text-gray-400 font-light leading-relaxed mb-6">
+                    Traditional South Asian attire, curated with love and precision for the New York community.
+                </p>
+                <div class="flex gap-4">
+                    <a href="https://instagram.com/nafiu.szn" target="_blank" class="text-gray-400 hover:text-[#d4af37] transition-colors text-sm underline decoration-white/20 hover:decoration-[#d4af37] underline-offset-4">@nafiu.szn</a>
+                </div>
+            </div>
+
             <div>
-                <h6 class="uppercase text-[10px] tracking-[0.2em] font-bold mb-8">Locations</h6>
-                <p class="text-gray-400 text-sm">9609 Springfield Blvd, Suite 209<br>Queens Village, New York, NY 11429</p>
+                <h6 class="text-[#d4af37] text-[11px] uppercase tracking-[0.2em] mb-6">Quick Links</h6>
+                <ul class="space-y-4 text-sm font-light text-gray-400">
+                    <li><a href="#collections" class="hover:text-white transition-colors">Shop Collections</a></li>
+                    <li><a href="#tailoring" class="hover:text-white transition-colors">Tailoring Services</a></li>
+                    <li><a href="#heritage" class="hover:text-white transition-colors">About Us</a></li>
+                    <li><a href="#stories" class="hover:text-white transition-colors">Customer Reviews</a></li>
+                    <li><a href="https://wa.me/19175167871" class="hover:text-[#d4af37] transition-colors">Book Appointment</a></li>
+                </ul>
             </div>
+
             <div>
-                <h6 class="uppercase text-[10px] tracking-[0.2em] font-bold mb-8">Inquiries</h6>
-                <a href="tel:+19175167871" class="text-gold-text block mb-2">+1 917-516-7871</a>
-                <a href="mailto:info@jkbrandsusa.com" class="text-gray-400">info@jkbrandsusa.com</a>
+                <h6 class="text-[#d4af37] text-[11px] uppercase tracking-[0.2em] mb-6">Services</h6>
+                <ul class="space-y-4 text-sm font-light text-gray-400">
+                    <li>Bridal Styling</li>
+                    <li>In-House Tailoring</li>
+                    <li>Custom Alterations</li>
+                    <li>Jewelry Consultation</li>
+                    <li>Groom Sherwani</li>
+                </ul>
             </div>
+
+            <div>
+                <h6 class="text-[#d4af37] text-[11px] uppercase tracking-[0.2em] mb-6">Find Us</h6>
+                <div class="space-y-4 text-sm font-light text-gray-400">
+                    <p>
+                        <span class="block text-white font-medium mb-1">Store Location</span>
+                        9609 Springfield Blvd, Suite 209<br>
+                        Queens Village, NY 11429
+                    </p>
+                    <p class="pt-2">
+                        <span class="block text-white font-medium mb-1">Direct Line</span>
+                        <a href="tel:+19175167871" class="hover:text-[#d4af37] transition-colors">+1 917-516-7871</a>
+                    </p>
+                    <p class="pt-2">
+                        <span class="block text-white font-medium mb-1">Hours</span>
+                        Mon–Sat: 11am — 8pm<br>
+                        Sunday: 12pm — 6pm
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="mt-20 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-600 uppercase tracking-widest">
+            <p>&copy; 2026 JK Foreign Brands USA Inc. All Rights Reserved.</p>
+            <p>Designed for Excellence</p>
         </div>
     </footer>
 
